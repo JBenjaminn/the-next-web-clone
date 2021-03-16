@@ -1,0 +1,82 @@
+@media screen and (max-device-width: 780px) {
+    #black-nav {
+        display: none;
+    }
+
+    #white-nav #TNWlogo-container {
+        /* positioning */
+        position: relative;
+
+        /* box model */
+        display: block;
+        width: 10%;
+        height: 100%;
+
+        /* visual */
+        background-color: black;
+    }
+
+    #white-nav #TNWlogo-container svg {
+        /* positioning */
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 50%;
+        transform: translateX(-50%);
+
+        /* box model */
+        display: block;
+        width: 40px;
+
+    }
+
+    #white-nav #news-section {
+        display: none;
+    }
+
+    #join-event-nav {
+        line-height: 60px;
+        font-size: 16px;
+    }
+
+    #main-section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #main-section div {
+        display: block;
+        width: 750px;
+        height: 420px;
+    }
+
+    #main-section div a {
+        font-size: 20px;
+    }
+
+    section#latest-news {
+        flex-direction: column;
+    }
+
+    section#latest-news img {
+        width: 75px;
+        height: 75px;
+    }
+
+    section#latest-news div {
+        display: flex;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    
+    section#latest-news .subsection-title {
+        display: inline;
+        margin-left: 20px;
+    }
+}
+
+@media screen and (min-device-width: 780px) {
+    .hidden {
+        display: none;
+    }
+}
