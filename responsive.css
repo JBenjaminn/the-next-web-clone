@@ -1,82 +1,93 @@
-@media screen and (max-device-width: 780px) {
-    #black-nav {
+@media screen and (max-width: 1024px) {
+    .header-navigation,
+    .header-newsletter-icon {
         display: none;
     }
 
-    #white-nav #TNWlogo-container {
-        /* positioning */
-        position: relative;
-
-        /* box model */
-        display: block;
-        width: 10%;
-        height: 100%;
-
-        /* visual */
-        background-color: black;
-    }
-
-    #white-nav #TNWlogo-container svg {
-        /* positioning */
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        left: 50%;
-        transform: translateX(-50%);
-
-        /* box model */
-        display: block;
-        width: 40px;
-
-    }
-
-    #white-nav #news-section {
+    .yellow-banner-section {
         display: none;
     }
 
-    #join-event-nav {
-        line-height: 60px;
-        font-size: 16px;
-    }
-
-    #main-section {
-        display: flex;
-        flex-direction: column;
-    }
-
-    #main-section div {
+    .logo-and-motto-section {
         display: block;
-        width: 750px;
-        height: 420px;
+        text-align: center;
+        padding: 50px;
     }
 
-    #main-section div a {
-        font-size: 20px;
+    .logo-and-motto-section .motto {
+        margin-top: 15px;
+        font-size: 18px;
     }
 
-    section#latest-news {
-        flex-direction: column;
+    .headline-articles-section {
+        display: grid;
+        grid-template-columns: repeat(2, 49%);
+        grid-template-rows: 392px repeat(2, 192px);
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
     }
 
-    section#latest-news img {
-        width: 75px;
-        height: 75px;
+    #article-1 { grid-area: 1 / 1 / 2 / 3; }
+    #article-2 { grid-area: 2 / 1 / 3 / 2; }
+    #article-3 { grid-area: 2 / 2 / 3 / 3; }
+    #article-4 { grid-area: 3 / 1 / 4 / 2; }
+    #article-5 { grid-area: 3 / 2 / 4 / 3; }
+
+    .popular-articles-wrapper {
+        display: block;
     }
 
-    section#latest-news div {
-        display: flex;
-        width: 100%;
+    .popular-article {
+        width: 90%;
         margin-bottom: 30px;
     }
-    
-    section#latest-news .subsection-title {
-        display: inline;
-        margin-left: 20px;
+
+    .latest-stories-list {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        grid-column-gap: 30px;
+    }
+
+    .latest-story-thumbnail {
+        height: 213px;
     }
 }
 
-@media screen and (min-device-width: 780px) {
-    .hidden {
-        display: none;
+@media screen and (max-width: 768px) {
+    .headline-articles-section {
+        display: flex;
+        flex-direction: column;
     }
+
+    .headline-articles-section article {
+        width: 100%;
+        height: 300px;
+        padding-left: auto;
+        padding-right: auto;
+        margin-bottom: 30px;
+    }
+
+    .latest-stories-list {
+        display: block;
+    }
+
+    .latest-story {
+        display: grid;
+        grid-template-columns: 25% auto;
+        grid-template-rows: 50px 20px auto;
+        grid-column-gap: 20px;
+        grid-row-gap: 10px;
+
+        margin-bottom: 30px;
+    }
+
+    .latest-story-thumbnail { grid-area: 1 / 1 / 4 / 2; }
+    .latest-story-title { grid-area: 1 / 2 / 2 / 3; }
+    .latest-story-time-uploaded { grid-area: 3 / 2 / 3 / 4; }
+
+    .latest-story-thumbnail {
+        width: 100%;
+        height: 100%;
+    }
+
 }
