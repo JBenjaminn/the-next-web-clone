@@ -48,9 +48,37 @@
         grid-column-gap: 30px;
     }
 
-    .latest-story-thumbnail {
-        height: 213px;
+    .latest-story-thumbnail { height: 213px; }
+
+    .work-with-us-section {
+        padding-right: 50px;
+        padding-left: 50px;
     }
+
+    .work-with-us-job-sector { 
+        flex-direction: column; 
+        height: 184px;
+    }
+
+    .work-with-us-job-sector .img { width: 60%; }
+
+    .affiliated-company img {
+        height: 136px;
+    }
+
+    section.media-links .logo-and-motto {
+        width: 100%;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+
+    section.more-and-about-tnw {
+        margin-top: 30px;
+        width: 100%;
+    }
+
 }
 
 @media screen and (max-width: 768px) {
@@ -81,6 +109,8 @@
         margin-bottom: 30px;
     }
 
+    .latest-story-title { font-size: 18px; }
+
     .latest-story-thumbnail { grid-area: 1 / 1 / 4 / 2; }
     .latest-story-title { grid-area: 1 / 2 / 2 / 3; }
     .latest-story-time-uploaded { grid-area: 3 / 2 / 3 / 4; }
@@ -90,4 +120,26 @@
         height: 100%;
     }
 
+    .work-with-us-section {
+        flex-direction: column;
+    }
+
+    .work-with-us-details-section,
+    .work-with-us-job-sectors-section {
+        width: 100%;
+    }
+
+    .work-with-us-details-section {
+        text-align: center;
+    }
+
+    .work-with-us-job-sectors-section {
+        margin-top: 50px;
+        margin-left: 0;
+    }
+
+    footer {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
 }

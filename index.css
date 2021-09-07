@@ -139,5 +139,160 @@ header {
   font-weight: 100;
 }
 
+/* work with us section */
+.work-with-us-section {
+  padding: 50px 100px;
+  display: flex;
+}
+
+.work-with-us-details-section {
+  padding-right: 20px;
+}
+
+.work-with-us-details-section .heading {
+  font-weight: 900;
+  font-size: 32px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.work-with-us-details-section .body {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+.work-with-us-details-section .get-in-touch-button {
+  background: #00d0d0;
+  padding: 20px 30px;
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+}
+
+.work-with-us-details-section,
+.work-with-us-job-sectors-section {
+  width: 50%;
+}
+
+.work-with-us-job-sectors-section {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 50px;
+}
+
+.work-with-us-job-sector {
+  width: 50%;
+  height: 144px;
+  display: flex;
+  align-items: center;
+}
+
+.work-with-us-job-sector .title {
+  font-weight: 600;
+  padding-left: 10px;
+}
+
+.work-with-us-job-sector .img {
+  height: 80%;
+}
+
+/* affiliated companies section */
+
+.affiliated-companies-section {
+  padding: 50px 30px;
+}
+
+.affiliated-companies-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.affiliated-company img {
+  height: 82px;
+}
+
+/* footer section */
+footer {
+  display: flex;
+  padding: 50px 100px;
+  background: #000;
+}
+
+section.media-links,
+section.more-and-about-tnw {
+  width: 50%;
+}
+
+section.media-links .logo-and-motto {
+  padding-bottom: 60px;
+}
+
+section.media-links .logo {
+  height: 39px;
+  padding-bottom: 20px;
+}
+
+section.media-links .motto {
+  font-size: 30px;
+  font-weight: 200;
+}
+
+.media-links-list {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.media-link {
+  height: 24px;
+  width: 24px;
+  margin-right: 10px;
+}
+
+.more-and-about-tnw {
+  display: flex;
+}
+
+.more-and-about-tnw .heading {
+  font-size: 20px;
+  font-weight: 600;
+  padding-bottom: 30px;
+}
+
+.more-and-about-tnw .heading,
+section.media-links .logo,
+section.media-links .motto {
+  color: #fff;
+}
+
+.more-and-about-tnw .tnw-item {
+  font-weight: 200;
+  font-size: 16px;
+  margin-bottom: 15px;
+  color: #00cccc;
+}
+
+section.more-tnw,
+section.about-tnw {
+  width: 50%;
+}
+
+ul.media-links-list .media-icon {
+  fill: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
